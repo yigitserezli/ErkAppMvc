@@ -8,4 +8,12 @@
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Views\Shared\Partials\" />
+    <None Remove="Views\Shared\Partials\Home\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Shared\Partials\" />
+    <Folder Include="Views\Shared\Partials\Home\" />
+  </ItemGroup>
 </Project>
